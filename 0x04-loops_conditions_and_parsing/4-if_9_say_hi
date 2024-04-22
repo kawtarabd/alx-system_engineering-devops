@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# this script is for print a string 10 times using while loop and on the ninth iteration it prints hi
+# if statement to print Hi when i is 9
+
+cnt=1
+
+while [ "$cnt" -lt 11 ]; do
+  echo "Best School"
+  
+  if [ "$cnt" -eq 9 ]; then
+    echo "Hi"
+  fi
+
+  ((cnt++))
+done
