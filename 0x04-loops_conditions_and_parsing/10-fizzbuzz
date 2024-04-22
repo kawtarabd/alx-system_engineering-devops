@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Fizzbuzz
+
+k=1
+
+while [ "$k" -le 100 ]; do
+
+
+  if ! (( k % 3 )) && ! (( k % 5 )); then
+    echo "FizzBuzz"
+  elif ! (( k % 3 )); then
+    echo "Fizz"
+  elif ! (( k % 5 )); then
+    echo "Buzz"
+  else
+    echo "$k"
+  fi
+  
+  ((k++))
+done
